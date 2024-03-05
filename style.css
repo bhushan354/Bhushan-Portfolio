@@ -274,10 +274,10 @@ header.sticky .nav-bar {
 }
 
 .section-title-01 {
-  font-size: 4.5em;
+  font-size: 5.5em;
   font-weight: 800;
   margin-bottom: 2rem;
-  background: linear-gradient (to top, transparent 0%, var(--first-color) 70%);
+  background: linear-gradient(to top, transparent 0%, var(--first-color) 350%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 1;
