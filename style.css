@@ -710,6 +710,14 @@ header.sticky .nav-bar {
   left: 0;
   background: var(--transparent-color-01);
   backdrop-filter: blur(20px);
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+.portfolio-model.active{
+  visibility: visible;
+  opacity: 1;
 }
 
 .portfolio-model-body{
