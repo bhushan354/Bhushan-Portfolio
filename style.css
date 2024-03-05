@@ -678,12 +678,11 @@ header.sticky .nav-bar {
 .portfolio-list .img-card .info{
   z-index: 777;
   position: absolute;
-  bottom: 0;
+  bottom: 10;
   left: 0;
   margin: 20px;
   color: #fff;
   transform: translateY(20px);
-  opacity: 0;
   transition: .5s ease;
 }
 
@@ -720,6 +719,10 @@ header.sticky .nav-bar {
   opacity: 1;
 }
 
+.portfolio-model.active .portfolio-model-body{
+  transform: translateY(0);
+}
+
 .portfolio-model-body{
   position: relative;
   background: var(--modal-bg-color);
@@ -728,6 +731,8 @@ header.sticky .nav-bar {
   padding: 40px;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
+  transform: translateY(-50px);
+  transition: .5s ease;
 }
 
 .portfolio-close-btn{
