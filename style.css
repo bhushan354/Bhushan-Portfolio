@@ -507,8 +507,26 @@ header.sticky .nav-bar {
   font-weight: 700;
 }
 
+.experience-card h5{
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  font-style: italic;
+}
 
+.experience-card span{
+  color: var(--third-color);
+}
 
+.experience-card .hr{
+  width: 100%;
+  height: 2px;
+  background: var(--line-color);
+  margin: 10px 0 22px;
+}
+
+.edu-list .item:hover, .bar:hover, .experience-card:hover{
+  transform: scale(1.03);
+}
 
 
 
