@@ -56,3 +56,24 @@ portfolioCloseBtns.forEach((portfolioCloseBtn) => {
     });
   });
 });
+
+
+// navigation active on pagr scroll
+
+window.addEventListener("scroll", () => {
+    const sections = document.querySelectorAll("section");
+    const scrollY = window.pageYOffset;
+  
+    sections.forEach(current => {
+      const sectionHeight = current.offsetHeight;
+      const sectionTop = current.offsetTop - 50;
+      const id = current.getAttribute("id");
+  
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        document.querySelector(".nav-items a[href*=" + id + "]").classList.add("active");
+      } else {
+        document.querySelector(".nav-items a[href*=" + id + "]").classList.remove("active");
+      }
+    });
+  });
+  
