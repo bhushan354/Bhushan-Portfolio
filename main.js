@@ -104,6 +104,7 @@ window.addEventListener("scroll", () => {
 const menuBtn = document.querySelector(".nav-menu-btn");
 const closeBtn = document.querySelector(".nav-close-btn");
 const navigation = document.querySelector(".navigation");
+const navItem = document.querySelectorAll(".nav-items a");
 
 menuBtn.addEventListener("click", () => {
   const newLocal = "active";
@@ -113,3 +114,9 @@ menuBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   navigation.classList.remove("active");
 });
+
+navItem.forEach((navItem) => {
+  navItem.addEventListener("click", () => {
+      navigation.classList.remove("active");
+  })
+})

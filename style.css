@@ -980,6 +980,12 @@ display: none;
     padding: 40px;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
+    transform: translateY(-50px);
+    transition: .3s ease;
+  }
+
+  .navigation.active .nav-items{
+    transform: translateY(0);
   }
 
   .nav-items a{
