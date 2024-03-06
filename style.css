@@ -93,6 +93,9 @@ li {
   cursor: pointer;
 }
 
+.theme-btn .fa-sun{
+  display: none;  
+}
 /* scroll bar */
 
 ::-webkit-scrollbar {
