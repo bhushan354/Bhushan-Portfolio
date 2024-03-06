@@ -94,7 +94,29 @@ window.addEventListener("scroll", () => {
   const getCurrentIcon = () => localStorage.getItem("saved-icom");
 
 
-if(savedTheme){
-  document.body.classList[savedTheme === "dark" ? "add" : "remove"]("dark-theme");
-  themeBtn.classList[savedIcon === "sun" ? "add" : "remove"]("sun");
-}
+// if(savedTheme){
+//   document.body.classList[savedTheme === "dark" ? "add" : "remove"]("dark-theme");
+//   themeBtn.classList[savedIcon === "sun" ? "add" : "remove"]("sun");
+// }
+
+//mainmenu popup 
+
+const menuBtn = document.querySelector(".nav-menu-btn");
+const closeBtn = document.querySelector(".nav-close-btn");
+const navigation = document.querySelector(".navigation");
+const navItem = document.querySelectorAll(".nav-items a");
+
+menuBtn.addEventListener("click", () => {
+  const newLocal = "active";
+  navigation.classList.add(newLocal);
+});
+
+closeBtn.addEventListener("click", () => {
+  navigation.classList.remove("active");
+});
+
+navItem.forEach((navItem) => {
+  navItem.addEventListener("click", () => {
+      navigation.classList.remove("active");
+  })
+})
