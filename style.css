@@ -1012,7 +1012,7 @@ display: none;
     right: 0;
     margin: 10px;
     cursor: pointer;
-
+    backdrop-filter: blur(10px); 
   }
 
   .nav-menu-btn{
@@ -1089,13 +1089,23 @@ display: none;
   .contact-form .second-row input{
     width: 100%
   };
-
 }
 
+@media screen and (max-width: 730px) {
+  /* common style for all  */
+  body{
+    margin: 5rem 0 0 0;
+  }
 
+  .section-title-01{
+    font-size: 3em;
+  }
 
-
-
+  .section-title-02{
+    font-size: 2em;
+    transform: translateY(-65px);
+  }
+}
 
 
 
