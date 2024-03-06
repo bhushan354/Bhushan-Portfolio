@@ -959,6 +959,14 @@ display: none;
     justify-content: center;
     align-items: center;
     background: var(--transparent-color-01);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease;
+  }
+
+  .navigation.active{
+    visibility: visible;
+    opacity: 11;
   }
 
   .nav-items{
@@ -978,8 +986,23 @@ display: none;
     margin: 15px 50px;
   }
 
+  .nav-close-btn{
+    position: absolute;
+    background: url(./images/menu2.png);
+    filter: var(--color-filter);
+    background-size: 12px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    cursor: pointer;
+
+  }
+
   .nav-menu-btn{
-    background: url(./images/menu.png)no-repeat;
+    background: url(./images/menu2.png)no-repeat;
     filter: var(--color-filter);
     background-size: cover;
     background-position: center;
