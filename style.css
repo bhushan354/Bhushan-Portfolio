@@ -1017,6 +1017,18 @@ display: none;
     cursor: pointer;
     display: block;
   }
+
+  /* home esection */
+  .home .home-container .info{
+    font-size: 0.85rem;
+  }
+
+  /* about section */
+  .about .container .content{
+    display: grid;
+    width: 100%;
+    row-gap: 20px;
+  }
   
 }
 
