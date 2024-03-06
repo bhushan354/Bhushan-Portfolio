@@ -77,3 +77,24 @@ window.addEventListener("scroll", () => {
     });
   });
   
+
+  // website dark mode
+
+  const themeBtn = document.querySelector(".theme-btn");
+
+  themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-theme");
+    themeBtn.classList.toggle("sun");
+
+    localStorage.setItem("saved-theme", getCurrentTheme());
+    localStorage.setItem("saved-icon", getCurrentIcon());
+  });
+
+  const getCurrentTheme = () => localStorage.getItem("saved-theme");
+  const getCurrentIcon = () => localStorage.getItem("saved-icom");
+
+
+if(savedTheme){
+  document.body.classList[savedTheme === "dark" ? "add" : "remove"]("dark-theme");
+  themeBtn.classList[savedIcon === "sun" ? "add" : "remove"]("sun");
+}
