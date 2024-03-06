@@ -63,7 +63,6 @@
 * {
   margin: 0;
   padding: 0;
-  border: 1px solid transparent;
   box-sizing: border-box;
   font-family: "popins", sans-serif;
 }
@@ -212,7 +211,7 @@ display: none;
 .home {
   position: relative;
   max-width: 1250px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   margin-left: auto;
   margin-right: auto;
   padding: 4rem 2rem;
@@ -1106,6 +1105,29 @@ display: none;
     font-size: 2em;
     transform: translateY(-65px);
   }
+
+  /* home section */
+
+  .home .home-container{
+    display: grid;
+  }
+
+  .home-container .home-img{
+    position: absolute;
+  }
+
+  .home-container .home-img img{
+    width: 55%;
+    transform: translate(136px, -164px);
+  }
+
+  .home .home-container .info{
+    font-size: 0.8rem;
+    margin-top: 92px;
+
+  }
+
+
 }
 
 
