@@ -2,6 +2,40 @@
 
 :root {
   /* main theme colour */
+  --first-color: #fff;
+  --second-color: #6a59d1;
+  --third-color: #a9afc3;
+
+  /* hover coloue */
+  --hover-color: #9c93d3;
+
+  /* background color */
+  --body-bg-color: #0e1b31;
+  --card-bg-color: #132347;
+  --modal-bg-color: #102048;
+  --bg-transparent-color: rgba(255, 255, 255, 0.1);
+  --transparent-color-01: rgba(255, 255, 255, 0.1);
+  --transparent-color-02: rgba(106, 89, 209, 0.1);
+  --line-color: #454f6b;
+
+  /* color filter */
+  --color-filter: invert(0);
+
+  /* box shadow */
+  --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+
+  /* font size  */
+  --small-font-size: 0.9em;
+  --normal-font-size: 1em;
+
+  /* scroll bar color */
+  --scroll-bar-color: #c1ceff;
+  --scroll-thumb-color: #282f4e;
+  --scroll-thumb-hover-color: #454f6b;
+}
+
+.dark-theme {
+  /* main theme colour */
   --first-color: #0e2431;
   --second-color: #6a59d1;
   --third-color: #777;
@@ -31,32 +65,6 @@
   /* scroll bar color */
   --scroll-bar-color: #c5cadf;
   --scroll-thumb-color: #70768a;
-  --scroll-thumb-hover-color: #454f6b;
-}
-
-.dark-theme {
-  /* main theme colour */
-  --first-color: #fff;
-  --second-color: #6a59d1;
-  --third-color: #a9afc3;
-
-  /* hover coloue */
-  --hover-color: #9c93d3;
-
-  /* background color */
-  --body-bg-color: #0e1b31;
-  --card-bg-color: #132347;
-  --modal-bg-color: #102048;
-  --bg-transparent-color: rgba(255, 255, 255, 0.1);
-  --transparent-color-01: rgba(255, 255, 255, 0.1);
-  --line-color: #454f6b;
-
-  /* color filter */
-  --color-filter: invert(0);
-
-  /* scroll bar color */
-  --scroll-bar-color: #c1ceff;
-  --scroll-thumb-color: #282f4e;
   --scroll-thumb-hover-color: #454f6b;
 }
 
@@ -120,12 +128,12 @@ li {
   cursor: pointer;
 }
 
-.theme-btn .fa-sun,
-.theme-btn.sun .fa-moon {
+.theme-btn .fa-moon,
+.theme-btn.moon .fa-sun {
   display: none;
 }
 
-.theme-btn.sun .fa-sun {
+.theme-btn.moon .fa-moon {
   display: block;
 }
 

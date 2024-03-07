@@ -84,7 +84,7 @@ window.addEventListener("scroll", () => {
 
   themeBtn.addEventListener("click", () => {
     document.body.classList.toggle("dark-theme");
-    themeBtn.classList.toggle("sun");
+    themeBtn.classList.toggle("moon");
 
     localStorage.setItem("saved-theme", getCurrentTheme());
     localStorage.setItem("saved-icon", getCurrentIcon());
