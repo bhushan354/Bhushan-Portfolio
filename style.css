@@ -293,6 +293,7 @@ header.sticky .nav-bar {
 .home-container .home-img img {
   width: 90%;
   transform: translate(0, 0);
+  border-radius: 16px;
 }
 
 .home .scroll-down {
@@ -1026,7 +1027,7 @@ header.sticky .nav-bar {
 
   .nav-close-btn {
     position: absolute;
-    background: url(./images/menu2.png);
+    background: url(./images/delete_14024991.png);
     filter: var(--color-filter);
     background-size: 12px;
     background-position: center;
@@ -1040,7 +1041,7 @@ header.sticky .nav-bar {
   }
 
   .nav-menu-btn {
-    background: url(./images/menu2.png) no-repeat;
+    background: url(./images/menu.png) no-repeat;
     filter: var(--color-filter);
     background-size: cover;
     background-position: center;
@@ -1143,6 +1144,7 @@ header.sticky .nav-bar {
   .home-container .home-img img {
     width: 55%;
     transform: translate(136px, -164px);
+    border-radius: 16px;
   }
 
   .home .home-container .info {
