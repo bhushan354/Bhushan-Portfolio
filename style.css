@@ -450,6 +450,7 @@ header.sticky .nav-bar {
 .skills-description {
   max-width: 700px;
   margin-bottom: 50px;
+  justify-self: center;
 }
 
 .skills-description h3 {
@@ -1079,7 +1080,7 @@ header.sticky .nav-bar {
   }
 
   .about-info .professional-list {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .about-info .professional-list .list-item {
